@@ -56,7 +56,7 @@ const getDoctorsById = async (id) => {
 const getBlogs = async () => {
   try {
     const response = await axios.get(
-      `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=3&apiKey=${BLOG_API_KEY}`
+      `https://newsapi.org/v2/top-headlines?category=health&pageSize=3&apiKey=${BLOG_API_KEY}`
     );
     // const response = await axios.get(
     //   `https://saurav.tech/NewsAPI/top-headlines/category/health/in.json`
